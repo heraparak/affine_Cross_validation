@@ -1,3 +1,6 @@
+#Please note data was taken from DNA_SEQ file for input
+#However, you may modified as needed
+
 $file-shift;
 open(IN,$file);
 @data=<IN>;
