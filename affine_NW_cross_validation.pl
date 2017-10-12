@@ -6,7 +6,7 @@ chomp(@aa);
 $data_length=scalar @aa;
 print($data_length);
 
-@go=(-16,-14,-12,-10,-8,-6,-4,-2);###pick the best numbe if possible
+@go=(-16,-14,-12,-10,-8,-6,-4,-2);###pick the best number if possible
 chomp(@ge);
 chomp(@go);
 $length_go=scalar @go;
