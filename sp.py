@@ -1,18 +1,14 @@
 #!/usr/bin/python
 # -*- coding: utf-8 -*-
 import random
-
-
 # We assume here that all nodes have sequences asigned
-
 def getparsimonyscore(T, root, score):
     L = T[1]
     R = T[2]
     S = T[3]
     P = T[0]
-
+    
     # if leave node do nothing
-
     if L[root] == -1 and R[root] == -1:
         return score
 
@@ -28,7 +24,6 @@ def getparsimonyscore(T, root, score):
     score = getparsimonyscore(T, R[root], score)
 
     return score
-
 
 def assignsequences(T, root):
 
@@ -62,12 +57,9 @@ def assignsequences(T, root):
     assignsequences(T, L[root])
     assignsequences(T, R[root])
 
-
     # assign to left child child
-
     # assign child to right child
-
-##smallparsimony.py
+    #smallparsimony.py
 
 def assignsets(T, root):
     S = T[3]
@@ -98,8 +90,7 @@ def assignsets(T, root):
             S[root] = union
 
     print(S)
-
-
+    
 ##MAIN
 
 #P = [4,4,5,5,6,6,-1]
