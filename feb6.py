@@ -141,47 +141,14 @@ def smallparsimony(T):
             S[i] += W[i]
 
     T = [P, L, R, S]
-
+    
     score = getparsimonyscore(T, root, score)
     return score
 
-
-P = [
-    4,
-    4,
-    5,
-    5,
-    6,
-    6,
-    -1,
-    ]
-L = [
-    -1,
-    -1,
-    -1,
-    -1,
-    0,
-    2,
-    4,
-    ]
-R = [
-    -1,
-    -1,
-    -1,
-    -1,
-    1,
-    3,
-    5,
-    ]
-S = [
-    'ACCA',
-    'ACGC',
-    'TCCG',
-    'TGGA',
-    '',
-    '',
-    '',
-    ]
+P = [4, 4, 5, 5, 6, 6, -1 ]
+L = [ -1, -1, -1, -1, 0, 2, 4 ]
+R = [-1, -1, -1, -1, 1, 3, 5]
+S = [ 'ACCA', 'ACGC', 'TCCG', 'TGGA', '', '', '']
 
 T = [P, L, R, S]
 pscore = smallparsimony(T)
