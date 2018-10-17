@@ -1,6 +1,5 @@
 ##spiral##
 import turtle
-
 def spiral(sides, turn, color, width):
     t = turtle.Turtle()
     t.speed(0)
@@ -11,7 +10,6 @@ def spiral(sides, turn, color, width):
         t.right(turn)
 
 spiral(30, 50, "cyan", 3)##input your parameter
-
 
 ##square##
 
@@ -26,3 +24,22 @@ def draw_square(sides, turn, color, width, length):
         t.right(turn)
       
 draw_square(4, 90, "yellow", 4, 50) ##input your parameters
+
+##another form of design
+
+import turtle
+def draw_square(sides, turn, color, width, length):
+    t = turtle.Turtle()
+    t.color(color)
+    t.speed(0)
+    t.width(width)
+    for n in range (sides):
+        t.forward(n)
+        t.right(turn)
+##calling multiple functions.
+draw_square(400, 130, "yellow", 1, 100) 
+draw_square(300, 140, "pink", 1, 75)
+draw_square(200, 150, "purple", 1, 50) 
+draw_square(100, 160, "red", 1, 25)
+draw_square(75, 170, "blue", 1, 12.5) 
+draw_square(50, 100, "orange", 1, 6.25)
