@@ -1,0 +1,11 @@
+import turtle
+
+def spiral():
+    t = turtle.Turtle()
+    t.color("cyan")
+    for n in range(150):
+        t.speed(0)
+        t.forward(n)
+        t.right(50)
+
+spiral()
