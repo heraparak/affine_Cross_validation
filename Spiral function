@@ -179,4 +179,32 @@ for n in range(10):
         t.color("red")
     bead(t)
     t.forward(40)
+#################
+##### stairs#####
+################
+# Write code to draw the staircase
+# pattern above.  The modulo operation
+# might be useful!
+
+import turtle
+t = turtle.Turtle()
+t.speed(0)
+t.width(2)
+t.color("yellow")
+
+# Move to the left before starting.
+#t.penup()
+t.back(200)
+t.pendown()
+
+# Draw ten beads.
+for n in range(10):
+    if n % 2 ==0 :
+        t.left(90)
+        t.color("pink")
+    else:
+        t.right(90)
+        t.color("red")
+    t.forward(40)
+
 
