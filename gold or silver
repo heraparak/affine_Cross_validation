@@ -1,0 +1,13 @@
+import turtle
+t = turtle.Turtle()
+t.width(100)
+
+coins = -10
+rich = coins >= 1
+
+if rich:
+    t.color("gold")
+else:
+    t.color("silver")
+
+t.forward(coins)
