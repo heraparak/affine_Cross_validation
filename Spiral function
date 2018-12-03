@@ -301,3 +301,22 @@ for n in range(540):
     angle = square(n)
     t.right(angle + .5)
     t.forward(5)
+
+
+#################
+#### return T
+###################
+import turtle
+
+def super_reptile():
+    t = turtle.Turtle()
+    t.width(5)
+    t.speed(0)
+    t.color("blue")
+    return t
+
+
+clark = super_reptile()
+clark.forward(100)
+clark.left(45)
+clark.forward(100)
