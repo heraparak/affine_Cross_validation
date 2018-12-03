@@ -17,3 +17,28 @@ for step in range(100):
     t.right(angle)
     t.forward(30)
     t.speed(0)
+#####
+##random
+####
+
+import turtle
+import random
+
+colors = ["red", "orange", "yellow", "green", "blue", "purple"]
+
+t = turtle.Turtle()
+#t.width = random.randint(10, 20)
+
+for step in range(100):
+    # Change this to use a random number.
+    angle = random.randint(0, 360)
+
+    # Change this to use a random color.
+    color = random.choice(colors)
+
+    t.color(color)
+    t.right(angle)
+    t.left(random.randint(1,4))
+    t.forward(random.randint(1, 50))
+    t.speed(random.randint(0, 9))
+    t.width(random.randint(1, 10))
