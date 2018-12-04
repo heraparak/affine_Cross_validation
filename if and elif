@@ -1,0 +1,40 @@
+#####################
+### Example 1 Try ###
+#####################
+
+mood = "happy"
+
+import turtle
+import random
+
+colors = ["red", "orange", "yellow", "green", "blue", "purple"]
+riley = turtle.Turtle()
+riley.width(5)
+
+#riley.color(random.choice)
+color = random.choice(colors)
+
+for side in range(5):
+    riley.color(color)
+    riley.forward(100)
+    riley.right(144)
+#####################
+### Corrected one ###
+#####################
+
+mood = "happy"
+
+import turtle
+riley = turtle.Turtle()
+riley.width(5)
+
+if mood == "happy":
+    riley.color("yellow")
+elif mood == "sad":
+    riley.color("blue")
+else:
+    riley.color("gray")
+
+for side in range(5):
+    riley.forward(100)
+    riley.right(144)
