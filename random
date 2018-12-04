@@ -42,3 +42,22 @@ for step in range(100):
     t.forward(random.randint(1, 50))
     t.speed(random.randint(0, 9))
     t.width(random.randint(1, 10))
+########################
+##### ELIF #############
+########################
+mood = "happy"
+
+import turtle
+riley = turtle.Turtle()
+riley.width(5)
+
+if mood == "happy":
+    riley.color("yellow")
+elif mood == "sad":
+    riley.color("blue")
+else:
+    riley.color("gray")
+
+for side in range(5):
+    riley.forward(100)
+    riley.right(144)
